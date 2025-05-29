@@ -72,6 +72,7 @@ print("Encrypted Output:", result["compressed"])
 # Decrypt the message
 decrypted = decrypt_pipeline(result["compressed"], result["tree"])
 print("Decrypted Output:", decrypted["plaintext"])
+```
 
 ---
 
