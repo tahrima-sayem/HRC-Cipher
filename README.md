@@ -57,29 +57,10 @@ HRC-Cipher/
 
 ---
 
-## Getting Started
-
-### Requirements
+## Requirements
 
 - Python 3.x
 - No external libraries needed (`random`, `heapq`, `collections` are standard)
-
-### Example Usage
-
-```python
-from hrc_cipher import encrypt_pipeline, decrypt_pipeline
-
-# Input message to encrypt
-plaintext = "Hello, this is a secure message!"
-
-# Encrypt the message
-result = encrypt_pipeline(plaintext)
-print("Encrypted Output:", result["compressed"])
-
-# Decrypt the message
-decrypted = decrypt_pipeline(result["compressed"], result["tree"])
-print("Decrypted Output:", decrypted["plaintext"])
-```
 
 ---
 
@@ -109,6 +90,21 @@ print("Decrypted Output:", decrypted["plaintext"])
 | 176 chars    | 1408             | 718              | 0.51               | 0.20      |
 | 394 chars    | 3152             | 1665             | 0.53               | 0.19      |
 | 690 chars    | 5520             | 2955             | 0.54               | 0.28      |
+
+---
+
+## Comparison With Existing Lightweight cryptography techniques
+The simple design technique and low computational overhead helps HRC-Cipher to outperform XOR in security and surpass TEA and PRESENT in execution time and memory use. A Comparison Table between HRC-Cipher and other esisting lightweight cryptography techniques XOR, TEA and PRESENT is given for input sample -
+<p align="center">
+"In a quiet village nestled between the hills, people wake early to tend their gardens and prepare fresh meals. Every day feels like a rhythm — the sun rises, children run to school, elders sip tea under banyan trees. The repetition of these simple joys forms the heartbeat of their peaceful routine."
+</p>
+
+| Encryption Method | Input Bits | Output Bits | Time (ms) | Memory (KB) |
+|-------------------|------------|-------------|-----------|-------------|
+| HRC-Cipher        | 2392       | 1904        | 0.70      | 0.26        | 
+| XOR               | 2392       | 2392        | 0.05      | 0.66        |
+| TEA               | 2392       | 2392        | 1.61      | 598.00      |
+| PRESENT           | 2392       | 2392        | 2.12      | 747.50      |
 
 ---
 
