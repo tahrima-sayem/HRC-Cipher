@@ -85,16 +85,20 @@ print("Decrypted Output:", decrypted["plaintext"])
 
 ## Sample Performance
 
-**Original Text:**       Hello! This is Tahrima.
-**Reversed Words:**      !olleH sihT si .amirhaT
-**Caesar Encrypted:**    |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯
-**Key Used:**            91
-**Key Char:**            »
-**Cipher + Key:**        |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯»
-**Huffman Compressed:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...
-**Compression Ratio:**   0.4792
-**Execution Time:**      0.08 ms
-**Decrypted Text:**       Hello! This is Tahrima.
+### Sample output
+
+**Original Text:**       Hello! This is Tahrima.<br>
+**Reversed Words:**      !olleH sihT si .amirhaT<br>
+**Caesar Encrypted:**    |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯<br>
+**Key Used:**            91<br>
+**Key Char:**            »<br>
+**Cipher + Key:**        |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯»<br>
+**Huffman Compressed:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...<br>
+**Compression Ratio:**   0.4792<br>
+**Execution Time:**      0.08 ms<br>
+**Decrypted Text:**       Hello! This is Tahrima.<br>
+
+### Performance Table for different length of sample
 
 | Input Length | Compressed Bits | Compressed Bits | Compression Ratio | Time (ms) |
 |--------------|------------------|------------------|--------------------|-----------|
