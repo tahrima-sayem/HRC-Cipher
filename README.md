@@ -21,6 +21,13 @@ The algorithm is ideal for:
 
 ## How It Works
 
+![HRC-Cipher Flow Diagram](./Pipeline.png)
+<p align="center">
+  Figure - Block Diagram Of the System
+</p>
+
+### Encryption
+
 The encryption process consists of the following stages:
 
 1. **Tokenization**: The input text is split into words.
@@ -28,6 +35,7 @@ The encryption process consists of the following stages:
 3. **Caesar Cipher**: A random key \( k \in [1,10] \) is chosen and applied via ASCII Caesar cipher.
 4. **Key Hint**: The Caesar key is encoded (1 → 'a', ..., 10 → 'j') and appended to the encrypted string.
 5. **Compression**: Huffman encoding is used to compress the ciphertext.
+
 
 ### Decryption
 
