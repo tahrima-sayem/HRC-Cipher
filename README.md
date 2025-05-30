@@ -36,7 +36,6 @@ The encryption process consists of the following stages:
 4. **Key Hint**: The Caesar key is encoded (1 → 'a', ..., 10 → 'j') and appended to the encrypted string.
 5. **Compression**: Huffman encoding is used to compress the ciphertext.
 
-
 ### Decryption
 
 The process is reversed:
@@ -86,10 +85,26 @@ print("Decrypted Output:", decrypted["plaintext"])
 
 ## Sample Performance
 
-| Input Length | Compressed Bits | Compression Ratio | Time (ms) |
-|--------------|------------------|--------------------|-----------|
-| 50 chars     | 220              | 0.55               | 0.12      |
-| 100 chars    | 430              | 0.54               | 0.15      |
+**Original Text:**       Hello! This is Tahrima.
+**Reversed Words:**      !olleH sihT si .amirhaT
+**Caesar Encrypted:**    |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯
+**Key Used:**            91
+**Key Char:**            »
+**Cipher + Key:**        |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯»
+**Huffman Compressed:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...
+**Compression Ratio:**   0.4792
+**Execution Time:**      0.08 ms
+**Decrypted Text:**       Hello! This is Tahrima.
+
+| Input Length | Compressed Bits | Compressed Bits | Compression Ratio | Time (ms) |
+|--------------|------------------|------------------|--------------------|-----------|
+| 30 chars     | 240              | 111              | 0.46               | 0.08      |
+| 63 chars     | 512              | 263              | 0.51               | 0.10      |
+| 85 chars     | 680              | 366              | 0.53               | 0.26      |
+| 110 chars    | 880              | 461              | 0.54               | 0.28      |
+| 176 chars    | 1408             | 718              | 0.51               | 0.20      |
+| 394 chars    | 3152             | 1665             | 0.53               | 0.19      |
+| 690 chars    | 5520             | 2955             | 0.54               | 0.28      |
 
 ---
 
