@@ -1,6 +1,6 @@
 # HRC-Cipher
 
-**A Hybrid Lightweight Text Encryption Scheme Based on Reversal, Caesar Cipher, and Compression**
+**HRC-Cipher: A Hybrid Lightweight Reversal, Caesar, and Compression Based Text Encryption Scheme for Small-Scale and Educational Applications**
 
 ---
 
@@ -32,8 +32,8 @@ The encryption process consists of the following stages:
 
 1. **Tokenization**: The input text is split into words.
 2. **Reversal**: Each word is reversed to add obfuscation.
-3. **Caesar Cipher**: A random key \( k \in [1,10] \) is chosen and applied via ASCII Caesar cipher.
-4. **Key Hint**: The Caesar key is encoded (1 → 'a', ..., 10 → 'j') and appended to the encrypted string.
+3. **Caesar Cipher**: A random key \( k \in [1,95] \) is chosen and applied via ASCII Caesar cipher.
+4. **Key Hint**: The Caesar key is encoded (1 → '!', ..., 95 → '~') and appended to the encrypted string.
 5. **Compression**: Huffman encoding is used to compress the ciphertext.
 
 ### Decryption
