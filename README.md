@@ -122,6 +122,7 @@ Author: Tahrima Sayem Sowa
 
 - GitHub Repository: [https://github.com/tahrima-sayem/HRC-Cipher/blob/main/HCR.py](https://github.com/tahrima-sayem/HRC-Cipher/blob/main/HCR.py)
 - Flow Diagram: Available in `Pipeline.png`
+- Performance script: See `Benchmark.py`
 
 ---
 
