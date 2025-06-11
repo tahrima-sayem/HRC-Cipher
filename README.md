@@ -38,11 +38,12 @@ The encryption process consists of the following stages:
 
 ### Decryption
 
-The process is reversed:
-- Decompress
-- Extract and decode the key hint
-- Apply inverse Caesar cipher
-- Reverse words to recover original text
+The decryption process reverses each step of encryption in the following stages:
+
+1. **Decompression:** The Huffman-compressed ciphertext is decompressed to retrieve the encrypted string.
+2. **Key Extraction:** The encoded Caesar key (e.g., '!' to '~') is extracted from the final character and decoded back to its integer value.
+3. **Caesar Decryption:** The inverse Caesar cipher is applied using the decoded key to retrieve the reversed words.
+4. **Word Reversal:** Each word is reversed again to restore the original plaintext.
 
 ---
 
@@ -50,6 +51,7 @@ The process is reversed:
 
 ```
 HRC-Cipher/
+├── Benchmark.py        # Comparing benchmarkperformance with XOR, TEA, PRESENT
 ├── HRC.py              # Main encryption and decryption logic
 ├── Pipeline.png        # Flow diagram
 └── README.md           # This documentation
@@ -66,8 +68,7 @@ HRC-Cipher/
 
 ## Sample Performance
 
-### Sample output
-#### Encryption -
+### Sample encryption output
 **Original Text:**       Hello! This is Tahrima.<br>
 **Reversed Words:**      !olleH sihT si .amirhaT<br>
 **Caesar Encrypted:**    |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯<br>
@@ -78,7 +79,7 @@ HRC-Cipher/
 **Compression Ratio:**   0.4792<br>
 **Execution Time:**      0.08 ms<br>
 
-#### Decryption -
+### Sample decryption output
 **Compressed ciphertext:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...<br>
 **Decompressed text:**      |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯»<br>
 **Extracted Key Char:**     »<br>
