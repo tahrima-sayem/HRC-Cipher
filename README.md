@@ -67,7 +67,7 @@ HRC-Cipher/
 ## Sample Performance
 
 ### Sample output
-
+#### Encryption -
 **Original Text:**       Hello! This is Tahrima.<br>
 **Reversed Words:**      !olleH sihT si .amirhaT<br>
 **Caesar Encrypted:**    |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯<br>
@@ -77,7 +77,14 @@ HRC-Cipher/
 **Huffman Compressed:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...<br>
 **Compression Ratio:**   0.4792<br>
 **Execution Time:**      0.08 ms<br>
-**Decrypted Text:**       Hello! This is Tahrima.<br>
+
+#### Decryption -
+**Compressed ciphertext:**  00101101010101010110111110101111111000100000111111100011111001100001110010111010...<br>
+**Decompressed text:**      |ÊÇÇÀ£{ÎÄÃ¯{ÎÄ{¼ÈÄÍÃ¼¯»<br>
+**Extracted Key Char:**     »<br>
+**Extracted Key:**          91<br>
+**Decrypted Caesar Text:**  !olleH sihT si .amirhaT<br>
+**Plaintext:**              Hello! This is Tahrima.<br>
 
 ### Performance Table for different length of sample
 
