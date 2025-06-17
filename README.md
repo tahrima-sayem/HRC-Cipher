@@ -51,7 +51,7 @@ The decryption process reverses each step of encryption in the following stages:
 
 ```
 HRC-Cipher/
-├── Benchmark.py        # Comparing benchmarkperformance with XOR, TEA, PRESENT
+├── Benchmark.py        # Comparing benchmark performance with XOR, TEA, PRESENT
 ├── HRC.py              # Main encryption and decryption logic
 ├── Pipeline.png        # Flow diagram
 └── README.md           # This documentation
@@ -122,7 +122,7 @@ This code supports the following extended abstract:
 
 **HRC-Cipher: A Hybrid Lightweight Text Encryption Scheme Based on Reversal, Caesar Cipher, and Compression for Short Messages**  
 *IEEE Computer Society Bangladesh Chapter Symposium (BDC Symposium) 2025 — Submitted*  
-Author: Tahrima Sayem Sowa
+Author: Tahrima Sayem Sowa, Pankaj Bhowmik.
 
 ---
 
